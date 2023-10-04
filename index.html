@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300&family=Ubuntu&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Sign-Up-Form</title>
 </head>
@@ -12,23 +16,76 @@
 
     <div class="main">
         <div class="left">
-            <h1></h1>
+            <div class="forImage">
+                <div class="semi-transparent">
+                    <img src="./assets/odin-lined.png" alt="Odin Logo" height="100px">
+                    <h1>Odin Project</h1>
+                </div>
+            </div>
+            <div class="forFooter">
+                <p class="p-footer">Photo by <a class="a-footer" href="">Halie West</a> on <a class="a-footer" href="">Unsplash</a></p>
+            </div>
         </div>
         <div class="right">
 
             <div class="first">
-                Hi
+                <h3>
+                    This is not a real line service! You know you need something <br>
+                    like this in your life to help yu realize your deepest dreams. <br>
+                    Sign up <em>now</em> to get started.
+                    <br><br>
+                    You <em>know</em> you want to.
+                </h3>
             </div>
 
-            <div class="second">
-                Hello
-            </div>
 
-            <div class="third">
-                World
-            </div>
+            <form action="" method="get">
+                <div class="second">
+                    <h3>Let's do this</h3>
+                    <div class="form-main-div">
+                        <div class="form-columns">
+                            <div class="form-column">
+                                <div class="form-div">
+                                    <label for="firstName">FIRST NAME</label>
+                                    <input type="text" id="firstName" name="first_name">
+                                </div>
+                                <div class="form-div">
+                                    <label for="email">EMAIL</label>
+                                    <input type="email" id="email" name="email">
+                                </div>
+                                <div class="form-div">
+                                    <label for="password">PASSWORD</label>
+                                    <input type="password" id="password" name="password" required>
+                                    <p id="error"></p>
+                                </div>
+                            </div>
+                            <div class="form-column">
+                                <div class="form-div" id="right-form">
+                                    <label for="lastName">LAST NAME</label>
+                                    <input type="text" id="lastName" name="last_name">
+                                </div>
+                                <div class="form-div">
+                                    <label for="phoneNumber">PHONE NUMBER</label>
+                                    <input type="tel" id="phoneNumber" name="phone_number">
+                                </div>
+                                <div class="form-div">
+                                    <label for="confirmPassword">CONFIRM PASSWORD</label>
+                                    <input type="password" id="confirmPassword" name="confirm_password" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="third">
+                    <button type="submit" class="btn btn-green">Create Account</button>
+                    <div class="hyperlink">
+                        <p><a class="signin" href="">Already have an account? Sign in</a></p>
+                    </div>
 
+                </div>
+            </form>
         </div>
+    </div>
     </div>
 
     <script src="main.js"></script>
